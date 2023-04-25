@@ -57,7 +57,10 @@ def ChangeData():
             tempatLahir = input("Tempat Lahir: ")
             programStudi = input("Program Studi: ")
             tahunMasuk = int(input("Tahun Masuk: "))
+<<<<<<< HEAD
 
+=======
+>>>>>>> e75bd525070297183a647afa2531427cd620943f
             data.insert(i, [i+1, nim, nama, tanggalLahir, tempatLahir, programStudi, tahunMasuk])
 
             print("Data berhasil di ubah")
