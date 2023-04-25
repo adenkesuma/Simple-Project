@@ -66,6 +66,7 @@ def ChangeData():
 
 def Main():
     print("Database Mahasiswa")
+    print("ahah")
     print("="*18)
     print("1. Tambah \n2. Tampilkan \n3. Ubah \n4. Urutkan \n5. Cari \n0. Keluar")
     print("="*18)
