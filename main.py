@@ -43,6 +43,26 @@ def AddData():
     if True:
         Main()
 
+def ChangeData():
+    findNim = int(input("Masukan Nim : "))
+    print("="*30)
+
+    for i in range(len(data)):
+        if findNim == data[i][1]:
+            print(data[i][1])
+            del data[i]
+            nim = int(input("Nim: "))
+            nama = input("Nama: ")
+            tanggalLahir = input("Tanggal Lahir: ")
+            tempatLahir = input("Tempat Lahir: ")
+            programStudi = input("Program Studi: ")
+            tahunMasuk = int(input("Tahun Masuk: "))
+            data.insert(i, [i+1, nim, nama, tanggalLahir, tempatLahir, programStudi, tahunMasuk])
+
+            print("Data berhasil di ubah")
+            enter = input()
+            if True:
+                Main()
 
 def Main():
     print("Database Mahasiswa")
@@ -57,6 +77,12 @@ def Main():
     elif choice == 2:
         print("\n")
         PrintData()
+    elif choice == 3:
+        print("\n")
+        ChangeData()
+    elif choice == 0:
+        print("\nTerimakasih sudah menggunakan program kami")
+        quit()
     
 
 Main()
